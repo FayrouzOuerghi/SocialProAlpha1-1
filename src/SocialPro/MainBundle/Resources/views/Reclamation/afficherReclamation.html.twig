@@ -1,0 +1,64 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <link rel="stylesheet" href="{{ asset('Espoir/css/style.css') }}">
+    <script type="text/javascript" src="{{ asset('Espoir/js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('Espoir/js/script.js') }}"></script>
+    <script type="text/javascript" src=""></script>
+    <style type="text/css">
+        .div {
+            /* Pour le centrer dans la page */
+            margin: 0 auto;
+            width: 800px;
+            /* Pour voir les limites du formulaire */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+
+
+            -moz-box-shadow: 30px 25px 29px 0px rgba(0,0,0,0.75);
+            box-shadow: 30px 25px 29px 0px rgba(0,0,0,0.75);
+        }
+        .deuxvaleurs {
+            border-spacing: 5px 10px;
+        }
+        .label {
+            /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+            display: inline-block;
+            width: 100px;
+            text-align: right;
+        }
+
+    </style>
+    <center>
+        <h1>Ajouter Une Réclamation </h1>
+        {% for espoir in modele %}
+            <div class="div">
+                <table border="1" style="background-color: transparent" class="deuxvaleurs">
+                    <tr><td class="label">Type :</td>
+                        <td style="background-color: mintcream">{{ espoir.type }}</td>
+                    </tr>
+                    <tr><td class="label">De la part de :</td>
+                        <td style="background-color: mintcream">{{ espoir.nom }}</td>
+                    </tr>
+                    <tr><td class="label">Le code de l'object :</td>
+                        <td style="background-color: mintcream">{{ espoir.code }}</td>
+                    </tr>
+                    <tr><td class="label">Description :</td>
+                        <td style="background-color: mintcream">{{ espoir.description }}</td>
+                    </tr>
+                    <tr><td class="label">Reponse :</td>
+                        <td style="background-color: lightsalmon">{{ espoir.reponse }}</td>
+                    </tr>
+
+                    <tr><td class="label">Date :</td>
+                        <td style="background-color: mintcream">{{ espoir.date|date }}</td>
+                    </tr>
+                </table>
+                <p><a href="{{ path('supprimer_Reclamation',{'id':espoir.id}) }}">Supprimer</a></p>  <a href="{{ path('modifier_Reclamation',{'id':espoir.id}) }}">supp</a>
+
+            </div><br><br>
+
+        {% endfor %}
+    </center>
+{% endblock %}

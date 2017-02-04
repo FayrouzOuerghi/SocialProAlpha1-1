@@ -12,3 +12,33 @@ profile2:
 parametresprofil:
     path:     /paraprofile
     defaults: { _controller: SocialProMainBundle:SocialPro:parametresprofil }
+
+
+#_ _Start_Reclamation
+index_Reclamation:
+     path:     /reclamation
+     defaults: { _controller: SocialProMainBundle:Reclamation:index }
+ajouter_Reclamation:
+    path:     /ajouterReclamation
+    defaults: { _controller: SocialProMainBundle:Reclamation:ajouterReclamation }
+
+afficher_Reclamation:
+    path:     /afficherReclamation
+    defaults: { _controller: SocialProMainBundle:Reclamation:afficherReclamation }
+
+supprimer_Reclamation:
+    path:     /supprimerReclamation/{id}
+    defaults: { _controller: SocialProMainBundle:Reclamation:supprimerReclamation }
+
+modifier_Reclamation:
+    path:     /modifierReclamation/{id}
+    defaults: { _controller: SocialProMainBundle:Reclamation:modifierReclamation }
+
+valider_Reclamation:
+    path:     /validerReclamation
+    defaults: { _controller: SocialProMainBundle:Reclamation:supprimerReclamation }
+
+rechercher_Reclamation:
+    path:     /rechercherReclamation
+    defaults: { _controller: SocialProMainBundle:Reclamation:rechercherReclamation }
+#_ _End_Reclamation
