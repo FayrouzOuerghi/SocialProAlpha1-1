@@ -42,3 +42,34 @@ rechercher_Reclamation:
     path:     /rechercherReclamation
     defaults: { _controller: SocialProMainBundle:Reclamation:rechercherReclamation }
 #_ _End_Reclamation
+
+
+#_ _Start_Evenement
+index_Evenement:
+     path:     /Evenement
+     defaults: { _controller: SocialProMainBundle:Evenement:index }
+ajouter_Evenement:
+    path:     /ajouterEvenement
+    defaults: { _controller: SocialProMainBundle:Evenement:ajouterEvenement }
+
+afficher_Evenement:
+    path:     /afficherEvenement
+    defaults: { _controller: SocialProMainBundle:Evenement:afficherEvenement }
+
+supprimer_Evenement:
+    path:     /supprimerEvenement/{id}
+    defaults: { _controller: SocialProMainBundle:Evenement:supprimerEvenement }
+
+modifier_Evenement:
+    path:     /modifierEvenement/{id}
+    defaults: { _controller: SocialProMainBundle:Evenement:modifierEvenement }
+
+valider_Evenement:
+    path:     /validerEvenement
+    defaults: { _controller: SocialProMainBundle:Evenement:validerEvenement }
+
+rechercher_Evenement:
+    path:     /rechercherEvenement
+    defaults: { _controller: SocialProMainBundle:Evenement:rechercherEvenement }
+#_ _End_Reclamation
+

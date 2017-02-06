@@ -21,6 +21,12 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\OneToMany(targetEntity="SocialPro\MainBundle\Entity\Evenement", mappedBy="fos_user")
+     * @ORM\Column(nullable=true)
+     */
+    protected $evenements;
+
     public function __construct()
     {
         parent::__construct();
@@ -36,5 +42,24 @@ class User extends BaseUser
     {
         return $this->id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getEvenements()
+    {
+        return $this->evenements;
+    }
+
+    /**
+     * @param mixed $evenements
+     */
+    public function setEvenements($evenements)
+    {
+        $this->evenements = $evenements;
+    }
+
+
+
 
 }
