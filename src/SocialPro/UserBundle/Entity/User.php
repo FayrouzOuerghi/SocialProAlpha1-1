@@ -20,6 +20,27 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
+    /**
+     * @ORM\Column(type="string",length=255)
+     */
+    protected $nom;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    protected $sexe=null;
+
+    /**
+     * @ORM\Column(type="date",nullable=true)
+     */
+    protected $datedenaissance=null;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    protected $avatar=null;
+    /**
+     * @ORM\Column(type="string",length=255,nullable=true)
+     */
+    protected $role=null;
 
     public function __construct()
     {
@@ -35,6 +56,102 @@ class User extends BaseUser
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getNom()
+    {
+        return $this->nom;
+    }
+
+    /**
+     * @param mixed $nom
+     */
+    public function setNom($nom)
+    {
+        $this->nom = $nom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param mixed $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        $this->prenom = $prenom;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSexe()
+    {
+        return $this->sexe;
+    }
+
+    /**
+     * @param mixed $sexe
+     */
+    public function setSexe($sexe)
+    {
+        $this->sexe = $sexe;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDatedenaissance()
+    {
+        return $this->datedenaissance;
+    }
+
+    /**
+     * @param mixed $datedenaissance
+     */
+    public function setDatedenaissance($datedenaissance)
+    {
+        $this->datedenaissance = $datedenaissance;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    /**
+     * @param mixed $avatar
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param mixed $role
+     */
+    public function setRole($role)
+    {
+        $this->role = $role;
     }
 
 }
