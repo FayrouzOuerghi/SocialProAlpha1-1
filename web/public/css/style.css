@@ -205,7 +205,7 @@ body
 	text-align: left;
 	color: #333;
 	font-size: 15px;
-	font-family: "Montserrat", sans-serif;
+	font-family: "Muli", sans-serif;
 	padding: 0 20px;
 }
 .profile-content .cbp-l-grid-team-position {
@@ -753,7 +753,7 @@ iframe {
 .right-top-bnr a {
 	border: 1px solid #fff;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	border-radius: 4px;
 	font-size: 12px;
 	display: inline-block;
@@ -1500,7 +1500,7 @@ iframe {
 	text-transform: uppercase;
 	font-size: 12px;
 	color: #fff;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	padding: 0px 20px;
 	background: #0099ff;
 }
@@ -2256,7 +2256,7 @@ iframe {
 	display: inline-block;
 	color: #666666;
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 400;
 	line-height: 1.25em;
 }
@@ -2484,7 +2484,7 @@ iframe {
 	display: inline-block;
 	color: #666666;
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 400;
 	line-height: 1.25em;
 }
@@ -2544,7 +2544,7 @@ iframe {
 	display: inline-block;
 	color: #666666;
 	font-size: 15px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Muli', sans-serif;
 	font-weight: 400;
 	line-height: 1.25em;
 }
@@ -3221,6 +3221,48 @@ CANVAS PAGE STYLE
 }
 
 }
+
+
+/*==================================================
+  Create Post Box CSS
+  ==================================================*/
+
+.create-post{
+  width: 100%;
+  min-height: 90px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f1f2f2;
+}
+
+.create-post .form-group{
+  margin-bottom: 0;
+  display: inline-flex;
+}
+
+.create-post .form-group img.profile-photo-md{
+  margin-right: 10px;
+}
+
+.create-post .tools{
+  padding: 8px 0 10px;
+}
+
+.create-post .tools ul.publishing-tools{
+  display: inline-block;
+  text-align:left;
+  margin: 0;
+  padding:5px 0;
+}
+
+.create-post .tools ul.publishing-tools li a{
+  color: #6d6e71;
+  font-size: 18px;
+}
+
+.create-post .tools ul.publishing-tools li a:hover{
+  color: #27aae1;
+
 @media(max-width:320px) {
 }
 @media(max-height: 700px) {
