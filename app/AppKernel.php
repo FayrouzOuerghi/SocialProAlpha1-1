@@ -19,6 +19,8 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new SocialPro\MainBundle\SocialProMainBundle(),
             new SocialPro\UserBundle\SocialProUserBundle(),
+            new SocialPro\ProjectBundle\ProjectBundle(),
+            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

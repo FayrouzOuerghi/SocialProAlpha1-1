@@ -1,3 +1,7 @@
+project:
+    resource: "@ProjectBundle/Resources/config/routing.yml"
+    prefix:   /
+
 social_pro_user:
     resource: "@SocialProUserBundle/Resources/config/routing.yml"
     prefix:   /
@@ -11,3 +15,8 @@ app:
     type:     annotation
 fos_user:
     resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+
+
+discutea_forum:
+    resource: "@DForumBundle/Resources/config/routing.yml"
+    prefix:   /
