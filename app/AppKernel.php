@@ -19,8 +19,6 @@ class AppKernel extends Kernel
             new FOS\UserBundle\FOSUserBundle(),
             new SocialPro\MainBundle\SocialProMainBundle(),
             new SocialPro\UserBundle\SocialProUserBundle(),
-            new Stof\DoctrineExtensionsBundle\StofDoctrineExtensionsBundle(),
-            new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Discutea\DForumBundle\DForumBundle(),
         ];
 
