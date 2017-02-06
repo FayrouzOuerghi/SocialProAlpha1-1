@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             new SocialPro\MainBundle\SocialProMainBundle(),
             new SocialPro\UserBundle\SocialProUserBundle(),
             new SocialPro\ProjectBundle\ProjectBundle(),
+            new SocialPro\EntrepriseBundle\SocialProEntrepriseBundle(),
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
