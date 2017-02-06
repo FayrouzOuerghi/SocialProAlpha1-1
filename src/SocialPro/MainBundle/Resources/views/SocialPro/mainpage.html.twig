@@ -1,1 +1,39 @@
-<li><a href="{{ path('fos_user_security_logout') }}">log out</a></li>
+{% extends "SocialProMainBundle::layout.html.twig" %}
+
+{% block contenent %}
+    <!-- Post Create Box
+              ================================================= -->
+    <div style="margin-left: 30%.">
+    <div style="margin-left: 20%;margin-right: 20%; margin-top:20px;margin-bottom: 20px;">
+        <div class="row">
+            <div class="col-md-7 col-sm-7">
+                <div class="form-group">
+                    <textarea name="texts" id="exampleTextarea" cols="30" rows="2"  placeholder="Ecrire ce que vous voulez..."></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div >
+                <div>
+                    <ul class="publishing-tools list-inline">
+                        <li><a href="#"><i class="ion-compose"></i></a></li>
+                        <li><a href="#"><i class="ion-images"></i></a></li>
+                        <li><a href="#"><i class="ion-ios-videocam"></i></a></li>
+                        <li><a href="#"><i class="ion-map"></i></a></li>
+                        <li style="margin-left: 20%"></li>
+                        <button class="btn btn-primary">Publier</button>
+                    </ul>
+
+                </div>
+            </div>
+    </div><!-- Post Create Box End-->
+    </div>
+
+
+    <div style="margin: 0px 20% 20px 20%; background-color: white; padding: 20px; padding-top: 5px; border: inherit; border-radius: 15px;">
+        <h5 style="margin-bottom: 10px;"> Publications des amis:</h5>
+        <div style="margin: 10px;">
+            gtalna el PIdev....
+        </div>
+    </div>
+{% endblock %}
