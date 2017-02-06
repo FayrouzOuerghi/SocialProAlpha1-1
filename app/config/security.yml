@@ -19,7 +19,7 @@ security:
                 provider: fos_userbundle
 
                 #added in order to redirect to profile page when logged in
-                 #default_target_path: /
+                default_target_path: /mainpage
 
             logout:       true
             anonymous:    true
